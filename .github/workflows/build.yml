@@ -25,10 +25,10 @@ jobs:
 
     - name: 打包 EXE
       run: |
-        pyinstaller --onefile --noconsole --name "Excel合并工具" code_1.py
+        pyinstaller --onefile --noconsole --name "Excel" code_1.py
 
     - name: 上传成品
       uses: actions/upload-artifact@v4  # 关键修改点
       with:
-        name: Excel合并工具
-        path: dist/Excel合并工具.exe
+        name: Excel
+        path: dist/Excel.exe
